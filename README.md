@@ -6,10 +6,12 @@ We are going to containerise this app into a Docker Container.
 
 ## Resources & Requirements
 
-- Nodejs & Express
+- Simple Nodejs & Express App
+- [Official Node Image](https://hub.docker.com/_/node/)
 - [Get Started Docker](https://www.docker.com/get-started)
 - Docker Desktop
 - VSCode & Official Docker Extension
+- [Learn Docker in 7 Easy Steps - Full Beginner's Tutorial](https://youtu.be/gAkwW2tuIqE)
 
 ## Quickstart
 
@@ -20,7 +22,7 @@ We are going to containerise this app into a Docker Container.
 
 ## Dockerfile
 
-Dockfile is required in order to initialise container version of your app.
+Dockerfile is required in order to create image/container version of your app.
 
 ```Dockerfile
 FROM node:14
@@ -53,6 +55,18 @@ The ```.``` at the end of the docker build command tells that Docker should look
  docker build -t getting-started/demoapp:1.0 . 
 ```
 
-[Reference](https://docs.docker.com/engine/reference/commandline/build)
+[Build Reference](https://docs.docker.com/engine/reference/commandline/build)
 
 ## Docker Run
+
+Run the command below to start your new image / container
+
+The ```-p``` command maps the container port to a local port, in our case this opens up https://localhost:3000
+
+```bash
+docker run -p 3000:8080 getting-started/demoapp:1.0
+```
+
+[Run Reference](https://docs.docker.com/engine/reference/commandline/run)
+
+
