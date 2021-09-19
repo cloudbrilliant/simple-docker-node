@@ -1,0 +1,23 @@
+{
+  "name": "getting-started-docker-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudbrilliant/cuddly-chainsaw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cloudbrilliant/cuddly-chainsaw/issues"
+  },
+  "homepage": "https://github.com/cloudbrilliant/cuddly-chainsaw#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
